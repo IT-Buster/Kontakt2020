@@ -7,7 +7,7 @@ System informatyczny, który automatyzuje i wspomaga procesy na styku klient-org
 W ramach apllikacji dostępne są następujące moduły :
 
 - Baza klientów wraz z historią zdarzeń
-- Baza pocztowa - dodatkowa historia 
+- Baza pocztowa - dodatkowa historia w korespondencji pocztowej - itegracja z systemem pocztowym 
 - System wysyłki korespondencji seryjnej - kampanie mailingowe 
 - Kalkulacje klientów - obieg oferty dla klienta do ostatecznego zamówienia
 - Faktury lub integracja z systemem do fakturowania
