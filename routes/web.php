@@ -18,21 +18,21 @@ Route::get('/', function () {
 });
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
+     return view('dashboard');
 })->name('dashboard');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/contacts', function () {
-    return view('contacts');
+    return view('contacts/contacts');
 })->name('contacts');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/calculations', function () {
-    return view('calculations');
+    return view('calculations/calculations');
 })->name('calculations');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/invoices', function () {
-    return view('invoices');
+    return view('invoices/invoices');
 })->name('invoices');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/settings', function () {
-    return view('settings');
+    return view('settings/settings');
 })->name('settings');
