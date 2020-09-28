@@ -17,6 +17,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/user', 'App\Http\Controllers\UserController@index');
+Route::get('/create', 'App\Http\Controllers\UserController@create');
+Route::get('/createone', 'App\Http\Controllers\UserController@createone');
+Route::get('/delete', 'App\Http\Controllers\UserController@destroy');
+Route::get('/update', 'App\Http\Controllers\UserController@update');
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
      return view('dashboard');
 })->name('dashboard');

@@ -58,4 +58,14 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+
+    // public function setNameAttribute($password)
+    // {
+    //     $this->attributes['name'] = bcrypt($password);
+    // }
+
+    public function getNameAttribute($name)
+    {
+        return 'My name is'. ucfirst($name);
+    }
 }
